@@ -1,13 +1,11 @@
 # install 
 
-- download 
 
-- conda install
-
-```sh
+```bash
 cd /tmp
 
-#git clone https://github.com/daliagachc/nais_netcdf_standard.git
+#rm -r /tmp/nais_netcdf_standard
+git clone https://github.com/daliagachc/nais_netcdf_standard.git
 
 cd nais_netcdf_standard
 
@@ -16,7 +14,14 @@ conda install --force-reinstall -y -q --name nais_necdf -c conda-forge --file re
 conda activate nais_necdf
 conda develop install src
 
-#donda deactivate 
-#conda env remove --name nais_necdf
+#test 
+python -i ./src/nais_netcdf/nbs/z01_test.py
+
+#conda deactivate; conda env remove --name nais_necdf;rm -rf /tmp/nais_netcdf_standard
+
 ```
+
+# test
+
+the main functions are used in the notebooks inside [nbs](src%2Fnais_netcdf%2Fnbs)
 
