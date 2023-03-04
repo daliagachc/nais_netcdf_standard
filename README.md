@@ -2,7 +2,7 @@
 
 
 ```bash
-cd /tmp
+#cd /tmp
 
 #rm -r /tmp/nais_netcdf_standard
 git clone https://github.com/daliagachc/nais_netcdf_standard.git
